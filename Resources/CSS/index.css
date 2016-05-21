@@ -1,3 +1,4 @@
+/* General */
 * {
 	box-sizing: border-box;
 }
@@ -7,6 +8,15 @@
 	clear: both;
 	display: block;
 }
+
+/* Header */
+header {
+	background-color: #00b903;
+	padding: 15px 15px 15px 15px;
+}
+
+/* Content */
+
 
 body {
 	background-color: #eeeeee;
@@ -30,16 +40,68 @@ body {
 	margin: 15px;
 }
 
-header {
-	background-color: #00b903;
-	padding: 15px 15px 15px 15px;
-}
+/* Footer */
 
-/*Mobile Only*/
+/* Mobile Only */
 [class*="col-"] {
 	width: 100%;
 }
 
+/* Header */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	float:left;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #00b903;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+header {
+	float:left;
+}
+
+header img {
+	width: 0%;
+}
+
+header h1 {
+	text-align: center;
+}
+
+#nav {
+	position: static;
+}
+
+#nav:before {
+	content: '\2630';
+}
+
+#nav ul li {
+	list-style: none;
+}
+	
+#nav ul li a {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	padding: 0 10px;
+	text-align: center;
+}
+	
+#nav ul li a:hover {
+	background-color: #007500;
+}
+
+/* Content */
 #mainvideo {
 	display: block;
 	margin: auto;
@@ -47,8 +109,53 @@ header {
 	height: 75%;
 }
 
+/* Footer */
+
 @media only screen and (min-width: 789px) {
-	/*Desktop Only*/
+	/* Desktop Only */
+	/* Header */
+	header {
+		clear: left;
+	}
+	
+	.dropdown-content {
+		display: inline-block;
+		position: static;
+		
+	}
+	
+	header img{
+		width: 100%;
+	}
+	
+	#nav {
+		position: absolute;
+		right: 15;
+		top: 40;
+		height: 60px;
+	}
+	
+	#nav:before {
+		content: '';
+	}
+	
+	#nav ul li {
+		float: left;
+		list-style: none;
+	}
+	
+	#nav ul li a {
+		display: block;
+		color: #000000;
+		text-decoration: none;
+		padding: 0 10px;
+	}
+	
+	#nav ul li a:hover {
+		background-color: #007500;
+	}
+	
+	/* Content */
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}
 	.col-3 {width: 25%;}
@@ -74,26 +181,6 @@ header {
 		height: 60%;
 	}
 	
-	#nav {
-		position: absolute;
-		right: 15;
-		top: 40;
-		height: 60px;
-	}
+	/* Footer */
 	
-	#nav ul li {
-		float: left;
-		list-style: none;
-	}
-	
-	#nav ul li a {
-		display: block;
-		color: white;
-		text-decoration: none;
-		padding: 0 10px;
-	}
-	
-	#nav ul li a:hover {
-		background-color: #007500;
-	}
 }
