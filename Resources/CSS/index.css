@@ -16,8 +16,6 @@ header {
 }
 
 /* Content */
-
-
 body {
 	background-color: #eeeeee;
 }
@@ -116,12 +114,6 @@ header h1 {
 	/* Header */
 	header {
 		clear: left;
-	}
-	
-	.dropdown-content {
-		display: inline-block;
-		position: static;
-		
 	}
 	
 	header img{
