@@ -1,0 +1,63 @@
+/* General */
+body {
+	background-color: #eeeeee;
+}
+
+/* General Header */
+#header {
+	width: 100%;
+	background-color: #00b903;
+	padding: 15;
+	float: left;
+}
+
+#header img {
+	width: 15%;
+	height: auto;
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+/* General Footer */
+#footer {
+	background-color: #00b903;
+}
+
+/* Index Specific */
+#credit {
+	float: left;
+	display: inline;
+	margin: auto;
+}
+
+#credit p {
+	display: inline;
+	float: left;
+	margin: 15px;
+}
+
+#credit img {
+	display: block;
+	float: left;
+	margin: 15px;
+}
+
+#mainvideo {
+	display: block;
+	margin: auto;
+	width: 55%;
+	height: 60%;
+}
+
+#footer {
+	clear: both;
+}
+
+/* Contact Specific */
